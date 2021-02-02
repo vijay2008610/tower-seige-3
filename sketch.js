@@ -175,7 +175,7 @@ function keyPressed() {
     slingshot.attach(ball.body);
 } 
 
-function getBackground(){
+async function getBackground(){
     var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
     var responseJSON = await response.json();
 
